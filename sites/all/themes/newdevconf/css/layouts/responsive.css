@@ -16,17 +16,15 @@
  */
 #page,
 .region-bottom {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
   color: white;
 }
 
 #header {
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_sans_proregular', Tahoma, "DejaVu Sans", sans-serif;
   background: url('../../images/dark_gray_bg.png') repeat-x;
   height: 7em;
-  margin-top: 1em;
+  font-weight:bold;
+  text-transform:uppercase;
 }
 
 #header .logohighlight {
@@ -46,6 +44,30 @@
   color: #858583;
 }
 
+#cfp-banner
+{
+    background: none repeat scroll 0 0 rgba(116, 161, 203, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) inset, 0 6px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) inset, 0 6px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) inset, 0 6px 5px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+}
+
+#cfp-banner a
+{
+    color:white;
+}
+
+#cfp-banner a:hover
+{
+    text-decoration:underline;
+}
 /*Main Menu responsive area*/
 
 @media (max-width: 768px) {
@@ -54,7 +76,7 @@
 }
 
 @media (min-width: 800px) {
-  #block-nice-menus-1 { float: right; margin-right: 21em; margin-top: -2.5em; }
+  #block-nice-menus-1 { float: right; margin-top: -2.5em; }
   #jump_menu { display: none; }
 }
 
@@ -214,6 +236,13 @@ and (max-width: 960px)
 }
 
 /* Containers for grid items and flow items. */
+.content-wrapper
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
 #header,
 #main,
 #footer {

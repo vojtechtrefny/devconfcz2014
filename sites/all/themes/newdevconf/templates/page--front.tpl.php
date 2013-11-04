@@ -11,6 +11,7 @@
 <div id="page">
 
   <header class="header" id="header" role="banner">
+    <div class="content-wrapper">
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
     <?php endif; ?>
@@ -46,11 +47,11 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
+  </div>
   </header>
-
+  <div id="cfp-banner"><div class="content-wrapper">the 2014 CFP is <a href="cfp">now open</a> until December 1st 2013</div></div>
   <div id="main">
-
+    <div class="content-wrapper">
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -153,11 +154,12 @@
         <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>
-
+  </div>
   </div>
 
   <?php //print render($page['footer']); ?>
 <div id="footer">
+    <div class="content-wrapper">
 	<div id="footer_logos">
 		<span id="organized_by">Devconf is an event organized by:</span>
 		<br />
@@ -172,6 +174,7 @@
 		<a href="https://plus.google.com/events/ce6b2trcboo1rvu5mfjulk5051s"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/gplus2.png" /></a>
 		<a href="https://www.facebook.com/events/320221544781263/"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/facebook2.png" ></a/>
 	</div><!--end social media -->
+    </div>
 </div><!-- end footer -->
 
 </div>
