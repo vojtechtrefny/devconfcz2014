@@ -112,6 +112,12 @@ and (max-width: 960px)
   margin-bottom: 2em;
 }
 
+#main_speakers {
+  width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #speakers_title {
   font-size: 2em;
 }
