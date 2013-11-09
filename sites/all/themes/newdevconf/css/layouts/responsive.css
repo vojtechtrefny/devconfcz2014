@@ -103,7 +103,7 @@ and (max-width: 960px)
 }
 
 #main_speakers_block {
-  margin-bottom: 16em;
+  margin-bottom: 15em;
 }
 
 #main_speakers_header {
@@ -173,6 +173,8 @@ and (max-width: 960px)
   font-size: 1.25em;
 }
 
+/*Main Page Speaker View Styling*/
+
 .view-main-page-speakers {
   margin-top: 2em;
 }
@@ -181,6 +183,19 @@ and (max-width: 960px)
   float: left;
   margin-right: 1em;
   margin-left: 1em;
+}
+
+.view-main-page-speakers .views-field-title {
+  margin-top: -2.5em;
+}
+
+.view-main-page-speakers .views-field-title a {
+/*  padding-left: 0.5em;
+  padding-right: 0.25em;*/
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  font-size: 1.1em;
 }
 
 /*Speaker Content Type Node Styling*/
