@@ -183,6 +183,39 @@ and (max-width: 960px)
   margin-left: 1em;
 }
 
+/*Speaker Content Type Node Styling*/
+#left_curly {
+  float: left;
+  font-size: 14em;
+  margin-top: 0.5em;
+  color: #74a1cb;
+}
+
+#right_curly {
+  float: left;
+  font-size: 14em;
+  margin-top: 0.5em;
+  color: #74a1cb;
+}
+
+.field-name-field-speaker-image {
+  float: left;
+  margin-top: 2.9em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.field-name-field-speaker-bio {
+  float: left;
+  margin-top: 1em;
+}
+
+.field-name-field-speaker-related-links {
+  float: left;
+}
+
+/*Footer Styling*/
+
 #footer {
   font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
   background: url('../../images/dark_gray_bg.png') repeat-x;
