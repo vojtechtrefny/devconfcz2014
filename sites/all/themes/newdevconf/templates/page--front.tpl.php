@@ -68,6 +68,12 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
+       <div id="language_switcher">
+<?php
+          $block = module_invoke('locale', 'block_view', 'language');
+          print render($block['content']);
+          ?>
+       </div><!-- end language_switcher -->
        <!-- <div id="main_conf_hook">
         <?php
         	//$block = module_invoke('block', 'block_view', '1');
