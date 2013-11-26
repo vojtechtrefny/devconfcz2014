@@ -55,6 +55,12 @@
     color: transparent;
 }
 
+.locale-untranslated {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+
 #cfp-banner
 {
     background: none repeat scroll 0 0 rgba(116, 161, 203, 0.7);
