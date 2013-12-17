@@ -85,6 +85,19 @@
 {
     text-decoration:underline;
 }
+
+#countdown_timer {
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 16em;
+}
+
+.countdown_section {
+  float: left;
+  margin-left: 1em;
+}
+
 /*Main Menu responsive area*/
 
 @media (max-width: 768px) {

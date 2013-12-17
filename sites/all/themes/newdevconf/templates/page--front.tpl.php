@@ -7,7 +7,12 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
+<script>
+jQuery(function () {
+  var confday = new Date(2014, 1, 6);
+  jQuery('#countdown_timer').countdown({until: confday});
+  });
+</script>
 <div id="page">
 
   <header class="header" id="header" role="banner">
@@ -49,7 +54,10 @@
     <?php print render($page['header']); ?>
   </div>
   </header>
-  <div id="cfp-banner"><div class="content-wrapper">the 2014 CFP is <a href="cfp">now open</a> until December 1st 2013</div></div>
+  <div id="cfp-banner"><div class="content-wrapper">
+      <div id="countdown_timer">
+      </div><!-- end countdown_timer -->
+  </div><!-- end content-wrapper --></div><!-- end cfp-banner -->
   <div id="main">
     <div class="content-wrapper">
     <div id="content" class="column" role="main">
