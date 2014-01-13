@@ -204,29 +204,29 @@ and (max-width: 960px)
   font-size: 1.25em;
 }
 
-.view-main-page-news .views-field-title {
+.view-main-page-news .views-field-title, .view-main-page-news-czech .views-field-title {
   font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
   font-size: 1.25em;
 }
 
 /*Main Page Speaker View Styling*/
 
-.view-main-page-speakers {
+.view-main-page-speakers, .view-main-page-speakers-czech {
   margin-top: 2em;
 }
 
-.view-main-page-speakers .views-row {
+.view-main-page-speakers .views-row, .view-main-page-speakers-czech .views-row  {
   float: left;
   margin-right: 1em;
   margin-left: 1em;
   margin-bottom: 1em;
 }
 
-.view-main-page-speakers .views-field-title {
+.view-main-page-speakers .views-field-title, .view-main-page-speakers-czech .views-field-title {
   margin-top: -2.5em;
 }
 
-.view-main-page-speakers .views-field-title a {
+.view-main-page-speakers .views-field-title a, .view-main-page-speakers-czech .views-field-title a {
 /*  padding-left: 0.5em;
   padding-right: 0.25em;*/
   color: white;

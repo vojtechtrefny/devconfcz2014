@@ -6,6 +6,9 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
+ 
+ global $language;
+?>
 ?>
 <script>
 jQuery(function () {
@@ -91,32 +94,70 @@ jQuery(function () {
         <div id="main_page_blocks">
           <?php print render($page['front_blocks']);?>
         </div><!-- end main_page_blocks -->
+        
+        <?php if ($language->language == 'en') {
+        echo '
+        
 	<div id="main_speakers_block">
 		<div id="main_speakers_header">
 			<span id="speakers_title">SPEAKERS</span>
-			<span id="speakers_all"><a href="<?php $base_url?>/main-page-speakers">VIEW ALL</a></span>
+			<span id="speakers_all"><a href="/main-page-speakers">VIEW ALL</a></span>
 		</div><!-- end main_speakers_header -->
 
-		<div id="main_speakers">
-                <?php
+		<div id="main_speakers">';
+                
                          $main_speakers = module_invoke('views', 'block_view', 'main_page_speakers-block');
                         print render($main_speakers);
-                ?>
+               
 
-		</div><!-- end main_speakers -->
+		echo' </div><!-- end main_speakers -->
 	</div><!-- end main_speakers_block-->
 
     	<div id="main_news_block">
 		<div id="main_news_block_header">
 			<span id="news_title">NEWS</span>
-			<span id="news_all"><a href="<?php $base_url?>/main-page-news">VIEW ALL</a></span>
-		</div><!-- end main_news_block_header-->
-	        <?php
+			<span id="news_all"><a href="/main-page-news">VIEW ALL</a></span>
+		</div><!-- end main_news_block_header-->';
+	        
                		 $main_news = module_invoke('views', 'block_view', 'main_page_news-block');
         	        print render($main_news);
-	        ?>
+	        
 
-	</div><!-- end main_news_block -->
+	echo '</div><!-- end main_news_block -->
+	'; } 
+	
+	if ($language->language == 'cs') {
+        echo '
+        
+	<div id="main_speakers_block">
+		<div id="main_speakers_header">
+			<span id="speakers_title">PŘEDNÁŠEJÍCÍ</span>
+			<span id="speakers_all"><a href="/main-page-speakers-cz">ZOBRAZIT VŠE</a></span>
+		</div><!-- end main_speakers_header -->
+
+		<div id="main_speakers">';
+                
+                         $main_speakers = module_invoke('views', 'block_view', 'main_page_speakers_czech-block');
+                        print render($main_speakers);
+               
+
+		echo' </div><!-- end main_speakers -->
+	</div><!-- end main_speakers_block-->
+
+    	<div id="main_news_block">
+		<div id="main_news_block_header">
+			<span id="news_title">NOVINKY</span>
+			<span id="news_all"><a href="/main-page-news-cz">ZOBRAZIT VŠE</a></span>
+		</div><!-- end main_news_block_header-->';
+	        
+               		 $main_news = module_invoke('views', 'block_view', 'main_page_news_czech-block');
+        	        print render($main_news);
+	        
+
+	echo '</div><!-- end main_news_block -->
+	'; }
+	
+	?>
 
       <?php //print render($page['content']); ?>
       <?php //print $feed_icons; ?>
