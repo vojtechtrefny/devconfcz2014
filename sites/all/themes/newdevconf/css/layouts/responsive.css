@@ -20,7 +20,7 @@
 }
 
 #header {
-  font-family: 'source_sans_proregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_code_promedium', Tahoma, "DejaVu Sans", sans-serif;
   background: url('../../images/dark_gray_bg.png') repeat-x;
   height: 7em;
   font-weight:bold;
@@ -137,7 +137,7 @@ and (max-width: 960px)
 }
 
 #main_speakers_header {
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_code_promedium', Tahoma, "DejaVu Sans", sans-serif;
   border-bottom: 2px solid #74a1cb;
   margin-bottom: 2em;
 }
@@ -149,7 +149,7 @@ and (max-width: 960px)
 }
 
 #speakers_title {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #speakers_all {
@@ -172,13 +172,13 @@ and (max-width: 960px)
 }
 
 #main_news_block_header {
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_code_promedium', Tahoma, "DejaVu Sans", sans-serif;
   border-bottom: 2px solid #74a1cb;
   margin-bottom: 2em;
 }
 
 #news_title {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #news_all {
@@ -200,12 +200,12 @@ and (max-width: 960px)
   float: left;
   margin-right: 1em;
   margin-bottom: 1em;
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_code_promedium', Tahoma, "DejaVu Sans", sans-serif;
   font-size: 1.25em;
 }
 
 .view-main-page-news .views-field-title, .view-main-page-news-czech .views-field-title {
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_sans_proregular', Tahoma, "DejaVu Sans", sans-serif;
   font-size: 1.25em;
 }
 
@@ -269,7 +269,8 @@ and (max-width: 960px)
 /*Footer Styling*/
 
 #footer {
-  font-family: 'code_boldregular', Tahoma, "DejaVu Sans", sans-serif;
+  font-family: 'source_code_promedium', Tahoma, "DejaVu Sans", sans-serif;
+  text-transform: uppercase;
   background: url('../../images/dark_gray_bg.png') repeat-x;
   height: 7em;
   margin-top: 1em;
