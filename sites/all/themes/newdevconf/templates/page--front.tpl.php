@@ -9,7 +9,7 @@
  
  global $language;
 ?>
-?>
+
 <script>
 jQuery(function () {
   var confday = new Date(2014, 1, 6);
