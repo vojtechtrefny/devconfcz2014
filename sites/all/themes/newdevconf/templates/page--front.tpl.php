@@ -132,7 +132,7 @@ jQuery(function () {
 	<div id="main_speakers_block">
 		<div id="main_speakers_header">
 			<span id="speakers_title">PŘEDNÁŠEJÍCÍ</span>
-			<span id="speakers_all"><a href="/main-page-speakers-cz">ZOBRAZIT VŠE</a></span>
+			<span id="speakers_all"><a href="/cs/main-page-speakers-cz">ZOBRAZIT VŠE</a></span>
 		</div><!-- end main_speakers_header -->
 
 		<div id="main_speakers">';
@@ -147,7 +147,7 @@ jQuery(function () {
     	<div id="main_news_block">
 		<div id="main_news_block_header">
 			<span id="news_title">NOVINKY</span>
-			<span id="news_all"><a href="/main-page-news-cz">ZOBRAZIT VŠE</a></span>
+			<span id="news_all"><a href="/cs/main-page-news-cz">ZOBRAZIT VŠE</a></span>
 		</div><!-- end main_news_block_header-->';
 	        
                		 $main_news = module_invoke('views', 'block_view', 'main_page_news_czech-block');
