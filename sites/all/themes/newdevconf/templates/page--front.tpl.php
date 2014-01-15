@@ -224,7 +224,7 @@ jQuery(function () {
 		<img class="footer_logo" src="<?php print base_path() . path_to_theme();?>/images/JBossLogoCS.png" />
 	</div><!-- end footer_logos -->
 	<div id="social_media">
-		<a href="https://twitter.com/search?q=DevConfBrno&f=realtime"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/twitter2.png" /></a>
+		<a href="https://twitter.com/search?q=DevConfCZ&f=realtime"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/twitter2.png" /></a>
 		<a href="<?php print base_path();?>rss.xml"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/rss2.png" /></a>
 		<a href="https://plus.google.com/events/ce6b2trcboo1rvu5mfjulk5051s"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/gplus2.png" /></a>
 		<a href="https://www.facebook.com/events/320221544781263/"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/facebook2.png" ></a/>
