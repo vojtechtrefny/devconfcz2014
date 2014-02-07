@@ -10,12 +10,6 @@
  global $language;
 ?>
 
-<script>
-jQuery(function () {
-  var confday = new Date(2014, 1, 7);
-  jQuery('#countdown_timer').countdown({until: confday});
-  });
-</script>
 <div id="page">
 
   <header class="header" id="header" role="banner">
