@@ -273,7 +273,8 @@ function theme_dir_listing_list_view($node) {
     $output = theme('table', array('header' => $header, 'rows' => $rows));
     if ($has_actions) {
       // in D7 we don't send the table to the form builder. The table is build by theme_tableselect
-		$output = drupal_render(drupal_get_form('filebrowser_form_actions', $header, $rows, $actions, $node));
+	  $form = drupal_get_form('filebrowser_form_actions', $header, $rows, $actions, $node);
+		$output = drupal_render($form);
     }
     return $output;
   } // Directory is not empty

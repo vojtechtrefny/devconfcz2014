@@ -465,14 +465,16 @@ function filebrowser_view($node, $view_mode) {
      '#weight' => 1
   );
   if ($node->folder_uploads->enabled && user_access(FILEBROWSER_UPLOAD)) {
+    $form = drupal_get_form('filebrowser_form_upload', $node);
     $node->content['filebrowser_form_upload'] = array(
-      '#markup' => drupal_render(drupal_get_form('filebrowser_form_upload', $node)),
+      '#markup' => drupal_render($form),
       '#weight' => 2
     );
   }
   if ($node->folder_uploads->enabled && user_access(FILEBROWSER_CREATE_FOLDER)) {
+    $form = drupal_get_form('filebrowser_form_create_folder', $node);
     $node->content['filebrowser_form_create_folder'] = array(
-      '#markup' => drupal_render(drupal_get_form('filebrowser_form_create_folder', $node)),
+      '#markup' => drupal_render($form),
       '#weight' => 3
     );
   }
