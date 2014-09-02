@@ -130,7 +130,15 @@
                 <img class="footer_logo" src="<?php print base_path() . path_to_theme();?>/images/fedora_logo.png" />
                 <img class="footer_logo" src="<?php print base_path() . path_to_theme();?>/images/rh_logo.png" />
                 <img class="footer_logo" src="<?php print base_path() . path_to_theme();?>/images/JBossLogoCS.png" />
+                
         </div><!-- end footer_logos -->
+        <div id="footer_logos2">
+        
+        <span id="supported_by">Supported by:</span>
+                <br />
+                <a href="http://www.fit.vutbr.cz/.en"><img class="footer_logo" src="<?php print base_path() . path_to_theme();?>/images/fit_logo.png" title="FIT VUT" /></a>
+        </div><!-- end footer_logos2 -->
+        
         <div id="social_media">
                 <a href="https://twitter.com/search?q=DevConfCZ&f=realtime"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/twitter2.png" /></a>
                 <a href="<?php print base_path();?>rss.xml"><img class="sm_icon" src="<?php print base_path() . path_to_theme();?>/images/rss2.png" /></a>
